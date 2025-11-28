@@ -49,3 +49,23 @@ cd RTp0
 2. **Build the Project:** Use Maven to compile the project and generate the WAR file.
 3. **Deploy:** Deploy the generated ```.war``` file (in the ```target/``` folder) to your application server (e.g., Tomcat).
 4. **Access:** Access the application via your server's URL (e.g., ```http://localhost:8080/RTp0/```).
+
+## Project Structure
+
+```bash
+RTp0/
+├── pom.xml
+└── src/ 
+    └── main/
+        ├── java/ 
+        │   └── org/suptech/tp0/ 
+        │       ├── dao/ProductDao.java 
+        │       ├── entities/Product.java 
+        │       ├── metier/ProductMetier.java 
+        │       └── web/controller/ProductController.java 
+        └── webapp/
+            ├── index.html 
+            └── WEB-INF/ 
+                ├── views/products.jsp 
+                └── web.xml
+```
